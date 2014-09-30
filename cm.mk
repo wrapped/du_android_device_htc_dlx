@@ -27,7 +27,7 @@ PRODUCT_MANUFACTURER := HTC
 # Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=dlx \
-    BUILD_FINGERPRINT=htc/verizon_wwe/dlx:4.4.2/KOT49H/322791.1:user/release-keys \
-    PRIVATE_BUILD_DESC="4.09.605.1 CL322791 release-keys"
+    BUILD_FINGERPRINT=htc/verizon_wwe/dlx:4.4.2/KOT49H/322791.5:user/release-keys \
+    PRIVATE_BUILD_DESC="4.09.605.5 CL322791 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-verizon
