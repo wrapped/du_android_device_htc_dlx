@@ -1,7 +1,3 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
-
 # Release name
 PRODUCT_RELEASE_NAME := dlx
 
@@ -16,6 +12,10 @@ $(call inherit-product, vendor/eos/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/dlx/full_dlx.mk)
+
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dlx
