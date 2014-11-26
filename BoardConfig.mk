@@ -50,6 +50,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=dlx user_
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := cyanogenmod_dlx_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m7
+BOARD_NEEDS_MEMORYHEAPPMEM := true
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true
