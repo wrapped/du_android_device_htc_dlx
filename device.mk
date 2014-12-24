@@ -19,3 +19,6 @@ $(call inherit-product-if-exists, vendor/htc/dlx/dlx-vendor.mk)
 
 # Inherit from msm8960-common
 $(call inherit-product, device/htc/msm8960-common/msm8960.mk)
+
+# Bluetooth
+PRODUCT_PACKAGES +=\ libbt-vendor
