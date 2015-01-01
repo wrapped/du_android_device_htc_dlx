@@ -112,6 +112,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	libaudioamp
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+	libbt-vendor
+
 # Camera
 PRODUCT_PACKAGES += \
 	camera.msm8960
