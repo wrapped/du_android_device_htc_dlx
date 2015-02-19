@@ -133,10 +133,6 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
-# Torch
-PRODUCT_PACKAGES += \
-    Torch
-
 # We have enough space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
