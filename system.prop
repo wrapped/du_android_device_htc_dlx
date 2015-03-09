@@ -60,4 +60,5 @@ ro.telephony.get_imsi_from_sim=true
 telephony.lteOnCdmaDevice=1
 
 # USB
+persist.sys.isUsbOtgEnabled=true
 persist.sys.usb.config=mtp
