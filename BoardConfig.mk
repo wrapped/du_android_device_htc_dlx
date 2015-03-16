@@ -46,7 +46,7 @@ BOARD_EGL_CFG := device/htc/dlx/configs/egl.cfg
 #Kernel
 BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=dlx androidboot.selinux=permissive user_debug=0
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=dlx androidboot.selinux=permissive user_debug=0 androidboot.bootdevice=msm_sdcc.1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := cyanogenmod_dlx_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m7
@@ -91,6 +91,7 @@ BOARD_SEPOLICY_UNION += \
     drmserver.te \
     file_contexts \
     hcheck.te \
+    healthd.te \
     init.te \
     init_shell.te \
     mdm_helper.te \
@@ -107,7 +108,6 @@ BOARD_SEPOLICY_UNION += \
     tee.te \
     thermal-engine.te \
     thermald.te \
-    ueventd.te \
     vold.te \
     wpa.te
 
@@ -145,6 +145,7 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 TARGET_RECOVERY_FSTAB := device/htc/dlx/rootdir/etc/fstab.dlx
