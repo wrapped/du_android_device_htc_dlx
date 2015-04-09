@@ -67,6 +67,9 @@ BOARD_NEEDS_MEMORYHEAPPMEM := true
 COMMON_GLOBAL_CFLAGS += -DHTC_CAMERA_HARDWARE
 TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
+# CMHW
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
+
 # Graphics
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 HAVE_ADRENO_SOURCE := false
@@ -89,6 +92,7 @@ BOARD_SEPOLICY_UNION += \
     device.te \
     drmserver.te \
     file_contexts \
+    file.te \
     hcheck.te \
     healthd.te \
     init.te \
