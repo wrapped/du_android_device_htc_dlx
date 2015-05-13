@@ -33,10 +33,6 @@ PRODUCT_PACKAGES += \
     init.dlx.usb.rc \
     ueventd.dlx.rc
 
-# Post boot service
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/init.post_boot.sh:system/etc/init.post_boot.sh
-
 PRODUCT_PACKAGES += \
     libnetcmdiface
 
@@ -146,7 +142,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_LOCALES += en_US
 
