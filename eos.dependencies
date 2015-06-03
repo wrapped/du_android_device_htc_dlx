@@ -10,6 +10,10 @@
     "target_path": "device/htc/msm8960-common"
   },
   {
+    "repository": "vendor_htc",
+    "target_path": "vendor/htc"
+  },
+  {
     "repository": "device_qcom_common",
     "target_path": "device/qcom/common"
   },
