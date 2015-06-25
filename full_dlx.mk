@@ -105,7 +105,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-	libaudioamp
+	audio_amplifier.msm8960
 
 # Bluetooth
 PRODUCT_PACKAGES += \
