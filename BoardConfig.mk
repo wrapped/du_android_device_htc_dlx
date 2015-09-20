@@ -100,7 +100,6 @@ BOARD_SEPOLICY_UNION += \
     mm-qcamerad.te \
     mpdecision.te \
     netmgrd.te \
-    property.te \
     property_contexts \
     qmuxd.te \
     radio.te \
