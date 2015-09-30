@@ -15,7 +15,7 @@ $(call inherit-product, device/htc/dlx/full_dlx.mk)
 
 # Copy Bootanimation
 PRODUCT_COPY_FILES += \
-vendor/eos/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
+vendor/eos/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dlx
