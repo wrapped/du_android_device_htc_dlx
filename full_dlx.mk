@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_qcopt
+
 # SSL Compat
 PRODUCT_PACKAGES += \
     libboringssl-compat
