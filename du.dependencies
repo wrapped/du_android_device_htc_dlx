@@ -13,10 +13,4 @@
      "target_path":  "vendor/htc",
      "branch":       "lollipop-caf"
    }
-   {
-     "remote": "github",
-     "repository": "CyanogenMod/android_external_sony_boringssl-compat",
-     "target_path": "external/sony/boringssl-compat",
-     "revision": "cm-13.0"
-   }
 ]
