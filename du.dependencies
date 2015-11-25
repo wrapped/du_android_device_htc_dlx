@@ -1,9 +1,9 @@
 [
   {
     "remote": "github",
-    "repository": "wrapped/kernel_htc_m7",
+    "repository": "cyanogenmod/android_kernel_htc_m7",
     "target_path": "kernel/htc/m7",
-    "revision": "lp5.1"
+    "revision": "cm-12.1"
   },
   {
     "repository": "device_htc_msm8960-common",
